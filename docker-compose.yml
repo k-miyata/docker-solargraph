@@ -1,0 +1,16 @@
+version: '3'
+services:
+  solargraph:
+    build:
+      context: .
+      args:
+        - RUBY_VERSION=$RUBY_VERSION
+    ports:
+      - $PORT:7658
+    volumes:
+      - $SOURCE_PATH:/app
+    command: [
+      "solargraph", "socket",
+      "--host", "0.0.0.0",
+      "--port", "7658"
+    ]
