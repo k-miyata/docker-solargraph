@@ -11,7 +11,7 @@ Ruby の言語サーバ [Solargraph](https://solargraph.org/) を Docker コン�
 | 変数名 | 値の例 | 説明 |
 |:--|:--|:--|
 | `PORT` | `7658` | 言語サーバに接続するために使用するポート番号。 |
-| `RUBY_VERSION` | `latest`, `2.7` | 使用する Ruby のバージョン。[公式イメージ](https://hub.docker.com/_/ruby)で利用可能なバージョンを指定してください。 |
+| `RUBY_VERSION` | `2.7` | 使用する Ruby のバージョン。[公式イメージ](https://hub.docker.com/_/ruby)で利用可能なバージョンを指定してください。 |
 | `SOURCE_PATH` | `/path/to/src` | 使用するソースコードを含むディレクトリのパス。 |
 
 あとは `docker-compose up` でコンテナを起動すれば準備完了です。
